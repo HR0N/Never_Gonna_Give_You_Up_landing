@@ -1,0 +1,42 @@
+.screen_wrapper{
+  position: relative;
+
+  width: 100%;
+  height: 20px;
+
+  overflow: hidden;
+}
+
+.screen{
+  font-family: var(--monospace);
+}
+.info{
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  white-space: nowrap;
+  height: 100%;
+  padding: 0 2px;
+
+  animation: linear infinite animation_infoScreen 8s 2s;
+}
+
+
+@keyframes animation_infoScreen {
+  0%{
+    left: 0;
+  }
+  35%{
+    left: 0;
+  }
+  86%{
+    left: var(--difference_width);
+  }
+  96%{
+    left: var(--difference_width);
+  }
+  100%{
+    left: 0;
+  }
+}

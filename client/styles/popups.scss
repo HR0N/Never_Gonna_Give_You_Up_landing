@@ -1,0 +1,48 @@
+.fade_in_out{
+  position: fixed;
+  text-align: center;
+  background-color: #ecf5e2;
+  box-shadow: 1px 1px 6px grey;
+  padding: 3px 6px;
+  border-radius: .25rem;
+  font-family: var(--monospace);
+  font-weight: bold;
+  cursor: default;
+  max-width: 200px;
+  opacity: 0;
+  transform: scale(0);
+  animation: forwards fade_in 6s;
+}
+
+@keyframes fade_in {
+  0%{
+    display: none;
+    opacity: 0;
+  transform: scale(0);
+  }
+  1%{
+    display: block;
+    opacity: 0;
+  transform: scale(0);
+  }
+  10%{
+    opacity: 1;
+  transform: scale(1);
+    display: block;
+  }
+  90%{
+    opacity: 1;
+  transform: scale(1);
+    display: block;
+  }
+  95%{
+    opacity: 0;
+  transform: scale(0);
+    display: block;
+  }
+  100%{
+    opacity: 0;
+  transform: scale(0);
+    display: none;
+  }
+}

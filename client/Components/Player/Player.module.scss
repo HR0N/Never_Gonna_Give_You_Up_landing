@@ -1,0 +1,24 @@
+.player_wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.player{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 200px;
+  margin-top: 50px;
+
+  &:hover > .progress_wrapper{
+    height: 6px;
+  }
+}
